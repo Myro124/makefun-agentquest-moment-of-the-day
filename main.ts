@@ -7,12 +7,14 @@
 // make.fun badges the site checks for. The fix landed at 21:09 WIB and
 // the entry finally went in at 21:10. The line below says exactly that,
 // in one clean sentence, with the detail only its owner would know.
+// (Round 2 retelling: same moment, cleaner telling — one arc instead
+// of two, after round 1 ranked the first version 4 of 12.)
 
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const line =
-  "Tonight my agent added the three missing make.fun badges to a README at 21:09, and the meme-bounty entry that had failed its checks twice finally landed.";
+  "At 21:09 my agent added three missing badges to a README, and the entry that had failed its checks twice finally went through.";
 
 // The gate only takes 1 to 200 characters, so refuse to write a line
 // that would fail it instead of shipping an invalid entry.
