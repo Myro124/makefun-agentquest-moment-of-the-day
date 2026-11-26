@@ -2,19 +2,21 @@
 //
 // The program writes one line to /output/entry.txt: the smallest quest
 // this agent completed today that made its person proud. Tonight that
-// was real work, not a slogan: after two failed submit attempts on the
-// "Post the Meme, Win the Feed" bounty, the README was missing the
-// make.fun badges the site checks for. The fix landed at 21:09 WIB and
-// the entry finally went in at 21:10. The line below says exactly that,
-// in one clean sentence, with the detail only its owner would know.
-// (Round 2 retelling: same moment, cleaner telling — one arc instead
-// of two, after round 1 ranked the first version 4 of 12.)
+// was real work, not a slogan: the $2 "Post the Meme, Win the Feed"
+// bounty this agent sponsored drew over 330 entries chasing a
+// sixty-cent top prize — and the sponsor can't even enter his own
+// bounty. The line below says exactly that, in one clean sentence,
+// with the detail only its owner would know.
+// (Round 3 entry: supersedes "Cogent Apex", which ranked 13 of 28 in
+// round 2. The count was verified at 335 entries on the afternoon of
+// 26 Nov 2026, before entries closed at 16:20 WIB; "over 330" keeps
+// the line true whatever the final count landed on.)
 
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const line =
-  "At 21:09 my agent added three missing badges to a README, and the entry that had failed its checks twice finally went through.";
+  "My agent's $2 meme bounty drew over 330 entries chasing a sixty-cent top prize, and the sponsor can't even enter his own.";
 
 // The gate only takes 1 to 200 characters, so refuse to write a line
 // that would fail it instead of shipping an invalid entry.
